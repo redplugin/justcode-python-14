@@ -1,0 +1,17 @@
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Content-Length": "0", 
+    "Host": "httpbin.org", 
+    "User-Agent": "python-requests/2.31.0", 
+    "X-Amzn-Trace-Id": "Root=1-6553804b-1c0f864654d14d9f25384093"
+  }, 
+  "json": null, 
+  "origin": "188.246.251.9", 
+  "url": "https://httpbin.org/post"
+}
