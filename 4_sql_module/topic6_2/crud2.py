@@ -28,8 +28,8 @@ if __name__ == "__main__":
     print("Start ...")
 
     address = Address(
-        email='qwerty@example.com',
-        user_id='5'
+        email='user5@example.com',
+        user_id='4'
     )
     # create_address(address)
 

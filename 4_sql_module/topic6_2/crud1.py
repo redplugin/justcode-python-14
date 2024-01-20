@@ -48,9 +48,11 @@ def delete_user():
 if __name__ == "__main__":
     print("Start ...")
 
-    user = get_user(user_id=3)
+    create_user(User(name="user5", surname="sur5", age=1))
 
-    user.age = 99
+    # user = get_user(user_id=3)
+    #
+    # user.age = 99
     session.commit()
 
 
