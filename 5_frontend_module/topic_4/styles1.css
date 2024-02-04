@@ -1,0 +1,42 @@
+/* p {
+  color: blue;
+  font-size: 60px;
+}
+
+h1 {
+  color: red;
+} */
+
+/* h1,
+p {
+  color: blue;
+  font-size: 60px;
+} */
+
+* {
+  background-color: yellow;
+  /* background-image: url("static/1.jpg"); */
+}
+
+.greeting {
+  color: blue;
+  font-size: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  /* text-align: right; */
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+#hi {
+  color: red;
+  font-size: 60px;
+  /* background-color: green; */
+  /* border-radius: 50%; */
+}
+
+img {
+  /* border-radius: 20px; */
+  border-radius: 50%;
+}
