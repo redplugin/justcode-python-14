@@ -1,0 +1,8 @@
+.container {
+  background-color: #00ffff;
+  padding: 20px;
+  width: 300px;
+  /* height: 200px; */
+  margin: 0 auto;
+  border: 1px solid;
+}

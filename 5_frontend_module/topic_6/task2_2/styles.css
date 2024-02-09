@@ -1,0 +1,12 @@
+.container {
+  background-color: #00ffff;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border: 5px solid;
+}
+
+.container:hover {
+  background-color: #6aff00;
+}
