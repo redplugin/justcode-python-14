@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+
+      <!-- inputs -->
+      <div class="inputs">
+        <label>Number 1:</label>
+        <input type="number" id="input1" placeholder="Enter number..." />
+        <label>Number 2:</label>
+        <input type="number" id="input2" placeholder="Enter number..." />
+      </div>
+
+      <!-- operators/buttons -->
+      <div class="buttons">
+        <button id="btnPlus" onclick="handleClick(event)">+</button>
+        <button id="btnMinus" onclick="handleClick(event)">-</button>
+        <button id="btnMul" onclick="handleClick(event)">*</button>
+        <button id="btnDiv" onclick="handleClick(event)">/</button>
+        <!-- <button id="test" onclick="handleClick(event)">test</button> -->
+      </div>
+
+      <!-- result -->
+      <div class="result">
+        <h3>Result:</h3>
+        <p id="res">99</p>
+      </div>
+
+      <!-- history -->
+      <div class="history">
+        <ol id="history-list"></ol>
+      </div>
+    </div>
+  </body>
+</html>
