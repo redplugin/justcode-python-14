@@ -1,0 +1,21 @@
+body {
+  background-color: bisque;
+}
+
+.main {
+  background-color: #faebd7;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.post {
+  background-color: #faefe2;
+  margin: 5px 10px;
+  padding: 10px;
+
+  border: 1px solid bisque;
+  border-radius: 5px;
+}
