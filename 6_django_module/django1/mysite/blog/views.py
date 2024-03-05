@@ -1,8 +1,10 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.template import loader
 
+from blog.forms import CreatePostForm
 from blog.models import Post
+
 
 # views - Представления
 # templates - Шаблоны
@@ -27,6 +29,29 @@ def detail(request, post_id):
     return HttpResponse(f"<h1> id: {p.id}. {p.title} </h1>"
                         f"<p> {p.content} test </p>")
 
+
+def new_post(request):
+    if request.method == 'POST':
+        form = CreatePostForm(request.POST)
+
+        if form.is_valid():
+
+            post = form.save(commit=False)
+            post.author_id = 1
+            post.save()
+
+            return redirect("index")
+        else:
+            return HttpResponse('Error creating!')
+
+    # GET
+    context = {
+        'form': CreatePostForm()
+    }
+
+    return render(request,
+                  'blog/create_post.html',
+                  context=context)
 
 # def posts(request):
 #     post_id = request.GET.get('id', 1)

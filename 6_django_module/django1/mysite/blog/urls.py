@@ -4,7 +4,8 @@ from blog import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('<int:post_id>/', views.detail, name="detail")
+    path('new/', views.new_post, name="create"),
+    path('<int:post_id>/', views.detail, name="detail"),
 ]
 
 #  http://127.0.0.1:8000/blog/posts/?id=1
