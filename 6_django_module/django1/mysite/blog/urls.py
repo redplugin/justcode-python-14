@@ -1,9 +1,11 @@
 from django.urls import path
 
-from blog.views import index, posts
+from blog import views
 
 urlpatterns = [
-    path('', index),
-    path('post/', posts)
+    path('', views.index, name='index'),
+    path('<int:post_id>/', views.detail, name="detail")
 ]
 
+#  http://127.0.0.1:8000/blog/posts/?id=1
+#  http://127.0.0.1:8000/blog/posts/2/
