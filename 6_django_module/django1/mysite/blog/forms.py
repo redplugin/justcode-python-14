@@ -10,6 +10,7 @@ class CreatePostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['title', 'content', 'categories']
+        # fields = ['title', 'content', 'author', 'categories']
         # fields = '__all__'
         # exclude = ['created_at', 'updated_at']
 
