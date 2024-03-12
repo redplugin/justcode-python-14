@@ -7,7 +7,7 @@ from blog.views import PostListView, PostDetailView, PostCreateView
 urlpatterns = [
     path('', PostListView.as_view(), name='index'),
     path('new/', PostCreateView.as_view(), name="create"),
-    path('test/', views.test_view),
+    # path('test/', views.test_view),
     path('<int:post_id>/', PostDetailView.as_view(), name="detail"),
 ]
 

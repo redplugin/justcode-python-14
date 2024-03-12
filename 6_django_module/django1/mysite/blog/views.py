@@ -1,9 +1,11 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from django.template import loader
 from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import ListView, DetailView, CreateView
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
 from blog.forms import CreatePostForm
 from blog.models import Post
@@ -12,10 +14,6 @@ from blog.models import Post
 # views - Представления
 # templates - Шаблоны
 # urls - ссылки
-
-
-def test_view(request):
-    return render(request, 'blog/test_view.html')
 
 
 class PostListView(ListView):
