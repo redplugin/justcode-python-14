@@ -15,8 +15,16 @@ class Category(models.Model):
 
 class Post(models.Model):
 
+    GENDERS = (
+        ('M', 'Male'),
+        ('F', 'Female')
+    )
+
     title = models.CharField(max_length=200, db_index=True)
-    content = models.TextField()
+    content = models.TextField(blank=True, null=True)
+
+    photo = models.ImageField(upload_to='images/', blank=True, null=True)
+    gender = models.CharField(default='M', choices=GENDERS)
 
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     categories = models.ManyToManyField(Category)

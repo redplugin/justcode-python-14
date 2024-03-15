@@ -5,9 +5,7 @@ from blog.models import Post
 
 
 class PostSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Post
-        fields = ['title', 'content', 'author', 'demo_content']
-
-
+        fields = ['title', 'content', 'photo', 'gender', 'demo_content']
+        # fields = '__all__'
