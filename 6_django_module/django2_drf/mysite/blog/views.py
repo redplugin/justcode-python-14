@@ -82,6 +82,7 @@ class PostCRUDView(
             return self.retrieve(request, *args, **kwargs)
         return self.list(request, *args, **kwargs)
 
+    # 14.03.2024 HOMEWORK IS HERE
     def post(self, request, *args, **kwargs):
         pk = kwargs.get('pk')
         if pk:  # If pk exists
