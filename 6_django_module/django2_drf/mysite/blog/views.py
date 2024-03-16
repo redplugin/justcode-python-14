@@ -83,6 +83,9 @@ class PostCRUDView(
         return self.list(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
+        pk = kwargs.get('pk')
+        if pk:  # If pk exists
+            return self.update(request, *args, **kwargs)
         return self.create(request, *args, **kwargs)
 
     def delete(self, request, *args, **kwargs):
